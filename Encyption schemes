@@ -4,33 +4,13 @@ first method with import
 import string
 
 Library = string.ascii_uppercase + string.digits + "_"
-
-List = [165,248,94,346,299,73,198,221,313,137,205,87,336,110,186,69,223,213,216,216,177,138]
-
+List = ["hello there these codes were done by mansour and ahmed"]
 encrypted_list = []
-
 for item in List:
   encrypted_list.append(Library[item % 37])
-
 print("Encrypted list:", "".join(encrypted_list))
 
-
-second method without import(easiest method)
-LIBRARY = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_"
-
-LIST = [165,248,94]
-
-for item in LIST:
-  remainder = item % 37
-
-  if 0 <= remainder <= 25:
-    print("Alphabet")
-  elif 26 <= remainder <= 35:
-    print("Digits")
-  else:
-    print("Underscore")
-
-third method without import
+second method without import
 LIBRARY = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_"
 
 msg = "hello there these codes were done by mansour and ahmed".split()
@@ -44,10 +24,10 @@ print("picoCTF{", end='')
 print(encrypted_message, end='')
 
 
-fourth method without import but the modular has an inverse value meaning it starts from 1 and is to the power of -1
+third method without import but the modular has an inverse value meaning it starts from 1 and is to the power of -1
 LIBRARY = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_"
 
-msg = "104 372 110 436 262 173 354 393 351 297 241 86 262 359 256 441 124 154 165 165 219 288 42".split()
+msg = "hello there these codes were done by mansour and ahmed".split()
 
 encrypted_message = ""
 
